@@ -1,0 +1,69 @@
+ <!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/luyi.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav common-bar">
+			<a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+			<h1 class="mui-title global_title">编辑经营户（个人）</h1>
+			<a id="topRight" class="myinfo pull-right">
+				保存
+			</a>
+		</header>
+		<div class="mui-content">
+			<div class="mainContain">
+				<div class="IncomingSupplier IncomingItem">
+					<h2 class="edit-h2">基本信息</h2>
+					<div class="IncomingInfo">
+						<div class="InfoBox">
+							<label for=""><span>*</span>姓名：</label>
+							<input id='entpName1' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for=""><span>*</span>登录名：</label>
+							<input id='userName1' class="mui-btn mui-btn-block noSelectBg" type='text' value="" readonly>
+						</div>
+						<div class="InfoBox">
+							<label for=""><span>*</span>联系方式：</label>
+							<input id='contactDetail1' class="mui-btn mui-btn-block noSelectBg" type='text' value="" data-patten="^[0-9]*$" data-patten-desc="联系方式只能输入数字！">
+						</div>
+						<div class="InfoBox">
+							<label for=""><span>*</span>身份证号：</label>
+							<input id='bizRegNumber1' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for="">摊位号：</label>
+							<input id='stallNum1' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div id='man-type2' class="InfoBox">
+							<label for="man-type"><span>*</span>经营类型：</label>
+							<input id='man-type' data-options='{}' class="btn mui-btn mui-btn-block" type='text' value="">
+							<input id="entpType1" type="hidden" value="">
+						</div>
+						<input id="entpQrCode1" type="hidden" value="">
+						<input id="otherId1" type="hidden" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/form-utils.js"></script>
+		<script src="../js/l-page-personal-edit.js"></script>
+	</body>
+
+</html>

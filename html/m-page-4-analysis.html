@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/luyi.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav common-bar">
+			<a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+			<h1 id="storeReportTitle" class="mui-title global_title">门店报表</h1>
+		</header>
+
+		<div class="store-report-data">
+			<span id="Last7days" class="Lately" type="button"><span id="daysText">最近7天</span><img class="" src="../img/jiantou.png" /></span>
+			<div id="timeTap" class="timeTap">
+				<div id="latelyTap" class="Lately-tap">
+					<div>
+						<span class="active" id="sevenDays">最近7天</span>
+						<span id="thisMonth">本月</span>
+						<span id="lastMonth">上月</span>
+					</div>
+				</div>
+				<div class="custom">
+					<p>自定义</p>
+					<div>
+						<button id='startTimePicker' data-options='{"type":"date"}'></button>
+						<span></span>
+						<button id='endTimePicker' data-options='{"type":"date"}'></button>
+						<span id="screen">筛选</span>
+					</div>
+				</div>
+			</div>
+			<div id="timeTapbj" class="timeTapbj"></div>
+			<div class="category-purchase" id="categoryPurchasePie">
+				<div id="categoryPurchaseButton">
+					<div class="frequency">
+						<span class="active" id="number">品类进货次数</span>
+						<span id="price">品类进货总价</span>
+					</div>
+				</div>
+				<span id="containerTitle" class="containerTitle"></span>
+				<div id="container" class="category-purchase-pie"></div>
+			</div>
+			<div class="detailed">
+				<div>
+					<span>明细</span>
+					<span>合计：<span id="total"></span></span>
+				</div>
+				<table border="0" id="dataGrid">
+
+				</table>
+			</div>
+
+		</div>
+
+	</body>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/mui.picker.min.js"></script>
+	<script src="../js/form-utils.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/echarts.common.min.js"></script>
+	<script src="../js/m-page-analysis-instock.js"></script>
+	<script src="../js/m-page-analysis-outstock.js"></script>
+	<script src="../js/m-page-4-analysis.js"></script>
+
+</html>

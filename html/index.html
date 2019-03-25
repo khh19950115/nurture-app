@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/index.css" rel="stylesheet" />
+		<style>
+			.registIcon {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header id="header" class="mui-bar mui-bar-nav common-bar hide" style="display: block;">
+			<div id="userInfo" class="userInfo"><img src="../img/userInfo.png"></div>
+			<h1 id="globalTitle" class="mui-title global_title">首页</h1>
+		</header>
+		<!--<div id="startup" class="startup hide">
+			<img src="../img/startup.jpg" />
+			<div id="skip"><span>3</span><span>跳过</span></div>
+		</div>-->
+		<div class="mui-content">
+			<div class="mainContain">
+				<div class="mainTop">
+					<div id="sweepYards" class="registIcon top-1">
+						<a href="">
+							<img src="../img/scan_icon.png" alt="" />
+							<p>扫码入场</p>
+						</a>
+
+					</div>
+					<div id="admissionRegistration" class="registIcon top-2">
+						<a href="">
+							<img src="../img/admission_icon.png" alt="" />
+							<p>入场登记</p>
+						</a>
+
+					</div>
+					<div id="transactionRegistration" class="registIcon top-3">
+						<a href="">
+							<img src="../img/transaction_icon.png" alt="" />
+							<p>交易登记</p>
+						</a>
+					</div>
+					<div id="detectionRegistration" class="registIcon top-4">
+						<a href="">
+							<img src="../img/detection_icon.png" alt="" />
+							<p>检测登记</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="mainCenter">
+				<h2>台账记录</h2>
+				<div class="accountRecord">
+					<div class="registIcon one-1">
+						<a href="">
+							<img src="../img/enter_icon.png" alt="" />
+							<p>入场管理</p>
+						</a>
+					</div>
+					<div class="registIcon one-2">
+						<a href="">
+							<img src="../img/business_icon.png" alt="" />
+							<p>交易管理</p>
+						</a>
+					</div>
+					<div class="registIcon one-3">
+						<a href="">
+							<img src="../img/check_icon.png" alt="" />
+							<p>检测报告管理</p>
+						</a>
+					</div>
+					<div class="registIcon one-4">
+						<a href="">
+							<img src="../img/store_icon.png" alt="" />
+							<p>门店报表</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mainBottom">
+				<h2>基础信息</h2>
+				<div id="baseDiv" class="accountRecord">
+					<!--js 产品管理\供应商管理\客户管理\基础信息管理-->
+					<!--nmsc 经营户管理\供应商管理\客户管理\基础信息管理-->
+					<!--nmsh 产品管理\经营户管理-->
+					<div class="registIcon second-0">
+						<a href="">
+							<img src="../img/product_icon.png" alt="" />
+							<p>产品管理</p>
+						</a>
+					</div>
+					<div class="registIcon second-1">
+						<a href="">
+							<img src="../img/pruduct_icon.png" alt="" />
+							<p>经营户管理</p>
+						</a>
+					</div>
+					<div class="registIcon second-2">
+						<a href="">
+							<img src="../img/suply_icon.png" alt="" />
+							<p>供应商管理</p>
+						</a>
+					</div>
+					<div class="registIcon second-3">
+						<a href="">
+							<img src="../img/client_icon.png" alt="" />
+							<p>客户管理</p>
+						</a>
+					</div>
+					<div class="registIcon second-4">
+						<a href="">
+							<img src="../img/baseInfo_icon.png" alt="" />
+							<p>基础信息管理</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--个人中心弹出层-->
+			<div class="user-alert mui-hidden">
+				<span class="arrow-top"></span>
+				<img class="userPic" src="../img/userPic.jpg"/>
+				<h4 id="userName" class="user-h4">追溯云用户</h4>
+				<span id="entpName" class="user-normal">追溯企业</span>
+				<div id="changePassword" class="user-normal">修改登录密码</div>
+				<div id="userLogout" class="user-logout">退出登录</div>
+			</div>
+			<!--个人中心弹出层 end-->
+            <!--这里点击退出后会访问一下退出，账号数据串的应急处理-->
+			<iframe id="logoutIf" src="../img/baseInfo_icon.png" style="display: none;"></iframe>
+		</div>
+			<script type="text/javascript" src="../js/jweixin-1.0.0.js"></script>
+			<script src="../js/jquery-1.9.1.min.js"></script>
+			<script src="../js/mui.min.js"></script>
+			<script src="../js/common.js"></script>
+			<script src="../js/index_qrcode.js"></script>
+			<script src="../js/index.js"></script>
+	</body>
+
+</html>

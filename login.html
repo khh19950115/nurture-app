@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>天津肉菜平台追溯</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="js/tools.js"></script>
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+
+<body>
+<div class="container">
+	<div class="logo">
+		<img src="./img/logo.png" class="login_logo_1">
+		<p class="titleName">天津重要产品（肉菜）追溯</p>
+	</div>
+	<form class="login_form">
+		<div class="login_form_row">
+			<img src="./img/login_user.png" class="login_icon">
+			<input type="url" id="userName" placeholder="请输入账号" class="login_ipt" value="">
+		</div>
+		<div class="login_form_row">
+			<img src="./img/login_pwd.png" class="login_icon">
+			<input type="password" id="password" placeholder="请输入登录密码" class="login_ipt" value="">
+			<div class="mui-switch mui-switch-mini mui-switch-blue loginSwitch" id="loginSwitchBtn">
+				<div class="mui-switch-handle"></div>
+			</div>
+		</div>
+
+		<div class="mui-button-row">
+			<button type="button" class="mui-btn mui-btn-primary login_btn" id="login" onclick="return false;">登&nbsp;录</button>
+		</div>
+	</form>
+</div>
+
+<!--这里会访问一下退出，账号数据串的应急处理-->
+<iframe id="logoutIf" src="/logout" style="display: none;"></iframe>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.session.js"></script>
+<script src="js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/global_login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	</head>
+
+	<body>
+	    
+		<header class="mui-bar mui-bar-nav common-bar">
+		    <a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+		    <h1 class="mui-title global_title">修改密码</h1>
+		    <!--<a href="global_userInfo.html" class="myinfo pull-right">
+		    	<img src="../img/userInfo.png">
+		    </a>-->
+		</header>
+		<div class="mui-content">
+		  <div class="mui-input-row  inputName_box">
+			 <label>原登录密码</label>
+			 <input id="oldPassword" type="password" class="mui-input-clear" placeholder="请输入原始登录密码！" data-required="true" data-description="请输入原始登录密码！"/>
+		  </div>
+		  <div class="mui-input-row inputName_box">
+			 <label>新登录密码</label>
+			 <input id="newPassword" type="password" placeholder="请输入8-18位字符！" data-required="true" data-description="请输入新登录密码！" data-patten="^.{8,18}$" data-patten-desc="新登录密码请输入8-18位字符！"/>
+		  </div>
+		  <div class="mui-input-row inputName_box">
+			 <label>确认新密码</label>
+			 <input id="reNewPassword" type="password" class="mui-input-clear" placeholder="请输入8-18位字符！" data-required="true" data-description="请输入确认密码！" data-patten="^.{8,18}$" data-patten-desc=确认密码请输入8-18位字符！"/>
+		  </div>
+
+		  <div class="submit_box">
+			<button id="saveBtn" type="button" class="mui-btn mui-btn-success mui-btn-block">保       存</button>
+		  </div>
+		</div>
+		<script type="text/javascript" src="../js/jweixin-1.0.0.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/form-utils.js"></script>
+		<script src="../js/global_modifypwd.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,1 @@
+!function(o,t){var e={setGlobalFontSize:function(o){var t=document.querySelector("html"),e=t.getBoundingClientRect().width;t.style.fontSize=e/o+"px"}};o.tools=e}(window),tools.setGlobalFontSize(7.5),window.onresize=function(){tools.setGlobalFontSize(7.5)};

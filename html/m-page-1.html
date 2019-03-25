@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <script src="../js/tools.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link href="../css/mui.picker.min.css" rel="stylesheet"/>
+    <link href="../css/common.css" rel="stylesheet"/>
+    <link href="../css/luyi.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<header class="mui-bar mui-bar-nav common-bar">
+    <a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+    <h1 class="mui-title global_title">入场管理</h1>
+    <a href="" class="myinfo pull-right pro-add">
+        入场登记
+    </a>
+</header>
+
+<div id="offCanvasWrapper" class="mui-draggable">
+    <aside id="offCanvasSide" class="mui-off-canvas-right">
+        <!--<div id="offCanvasSideScroll" class="mui-scroll-wrapper slideMain" style="color: white; top: 0.9rem;">-->
+            <!--<div class="mui-scroll" style="padding-bottom: 1rem;">-->
+                <h4 class="slide-page-h">进货时间筛选</h4>
+                <ul class="slide-list-1">
+                    <li>
+                        <label class="slide-label" for="startTimePicker">开始时间：</label>
+                        <input id='startTimePicker' data-options='{}' class="btn mui-btn mui-btn-block slide-ipt"
+                               type='text' value="" readonly="readonly">
+                    </li>
+                    <li>
+                        <label class="slide-label" for="endTimePicker">结束时间：</label>
+                        <input id='endTimePicker' data-options='{}' class="btn mui-btn mui-btn-block slide-ipt"
+                               type='text' value="" readonly="readonly">
+                    </li>
+                </ul>
+                <h4 id="operatorH4" class="slide-page-h">经营户筛选</h4>
+                <button id="check-all" class="check-all agency-check-all">全选</button>
+                <ul id="check-list">
+                    <form class="mui-input-group" id="agency">
+
+                    </form>
+                </ul>
+                <h4 class="slide-page-h">供应商筛选</h4>
+                <button id="check-all2" class="check-all supplier-check-all">全选</button>
+                <ul id="check-list2">
+                    <form class="mui-input-group" id="supplier">
+
+                    </form>
+                </ul>
+            <!--</div>-->
+            <div class="slide-bottom-btn">
+                <button class="slide-btn-reset" id="resetBtn">重置</button>
+                <button class="slide-btn-screen" id="filterBtn">筛选</button>
+            </div>
+        <!--</div>-->
+    </aside>
+    <div id="offCanvasContentScroll" class="mui-inner-wrap mui-scroll-wrapper scrollWrapper" style="background-color: #f5f5f5;">
+        <div class="mui-content mui-scroll">
+            <div class="whole-search-box">
+                <input type="text" class="search-ipt" placeholder="产品SKU/产品名称" id="product-sku" style="width: 80% !important;">
+                <button class="screen-btn screen-btn1" onclick="reload(null,true)">搜索</button>
+                <span id="offCanvasSideScreen" class="screen-btn">筛选</span>
+            </div>
+            <div class="management-list">
+                <ul>
+                </ul>
+            </div>
+            <div class="tips-ex">
+                <p>没有更多数据</p>
+            </div>
+            <div id="clickback" class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script src="../js/form-utils.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/modular1.js"></script>
+<script src="../js/m-page-1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>天津肉菜平台追溯</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/tools.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/download.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav common-bar download-header">
+			<a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+			<h1 class="mui-title global_title">下载APP</h1>
+		</header>
+		<div class="download">
+			<img src="img/logo.png" class="login_logo_1">
+			<p>追溯节点APP</p>
+			<button id="iosEdition" type="button">下载IOS版</button>
+			<button id="androidEdition" type="button">下载Android版</button>
+			<div class="download-text">
+				<p>IOS系统</p>
+				<span>下载完成后会提示未受信任的应用不可使用，可按如下路径设置<b>“设置-通用-设备管理”</b>然后点击信任即可。</span>
+				<p>Adnroid系统</p>
+				<span>需要在<b>“设置-系统安全”</b>中允许安装未知来源的应用</span>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		document.getElementById("iosEdition").addEventListener("tap", function() {
+			alert("下载IOS版");
+		});
+		document.getElementById("androidEdition").addEventListener("tap", function() {
+			alert("下载Android版");
+		});
+	</script>
+</html>

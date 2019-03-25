@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/luyi.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav common-bar">
+			<a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+			<h1 class="mui-title global_title">编辑产品</h1>
+			<a id="topRight" class="myinfo pull-right">
+				保存
+			</a>
+		</header>
+		<div class="mui-content">
+			<div class="mainContain">
+				<div class="IncomingSupplier IncomingItem">
+					<h2 class="edit-h2">基本信息</h2>
+					<div class="IncomingInfo">
+						<div class="InfoBox">
+							<label for=""><span>*</span>产品SKU编号：</label>
+							<input id='productNo' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for=""><span>*</span>产品名称：</label>
+							<input id='productName' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div id='pro-category' class="InfoBox">
+							<label for="pro-category"><span>*</span>品类：</label>
+							<input id="varietiesText" class="mui-btn mui-btn-block" type='text' disabled="disabled" readonly="readonly">
+							<input id="varieties" type="hidden" value="">
+						</div>
+						<div id='pro-supplier' class="InfoBox">
+							<label for="pro-supplier"><span>*</span>供应商：</label>
+							<input id="supplierText" class="mui-btn mui-btn-block" type='text' disabled="disabled">
+							<input id="supplier" type="hidden" value="">
+						</div>
+						<div id='pro-type' class="InfoBox">
+							<label for="pro-type">产品类型：</label>
+							<input id="productTypeText" class="mui-btn mui-btn-block" type='text' disabled="disabled">
+							<input id="productType" type="hidden" value="">
+						</div>
+						<div class="InfoBox">
+							<label for="">品牌：</label>
+							<input id='productBrand' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for="">保质期：</label>
+							<input id='durabilityDay' class="mui-btn mui-btn-block noSelectBg" type='text' value=""   data-patten="^[0-9]*$" data-patten-desc="保质期只能输入数字！">
+						</div>
+						<div class="InfoBox">
+							<label for="">产地：</label>
+							<input id='systemReserve2' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for="">单价：</label>
+							<input id='productPrice' class="mui-btn mui-btn-block noSelectBg" type='text' value=""   data-patten="^([0-9]+(\.\d+)?|0\.\d+)$" data-patten-desc="单价只能输入数字！">
+						</div>
+						<!--拍照上传-->
+						<!--<div class="InfoBox">
+							<label for="">图片：</label>
+							<input id='' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>-->
+						<!--拍照上传end-->
+
+						<form id="pushFileForm" action="/core/fileInfo/uploader" enctype="multipart/form-data">
+							<div class="add-pictures">
+								<span>添加图片</span>
+								<div>
+									<ul id="addPictures">
+										<li><input type="file" accept="image/*" capture="camera" id="upload" name="upload"  multiple ><span class="mui-icon mui-icon-plusempty"></span></li>
+										<!--<li><img src="../img/add-pictures.jpg" ><div class="mui-icon mui-icon-closeempty"></div></li>-->
+									</ul>
+								</div>
+							</div>
+						</form>
+						<!--拍照上传end-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--遮罩-->
+		<div hidden class="click-enlarge"></div>
+		
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/form-utils.js"></script>
+		<script src="../js/l-page-0-edit.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/luyi.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav common-bar">
+			<a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+			<h1 class="mui-title global_title">编辑客户（个人）</h1>
+			<a id="topRight" class="myinfo pull-right">保存</a>
+		</header>
+		<div class="mui-content">
+			<div class="mainContain">
+				<div class="IncomingSupplier IncomingItem">
+					<h2 class="edit-h2">基本信息</h2>
+					<input id="id" type="hidden">
+					<div class="IncomingInfo">
+						<div class="InfoBox">
+							<label for="customerName"><span>*</span>姓名：</label>
+							<input id='customerName' class="mui-btn mui-btn-block noSelectBg" type='text' value="" data-description="请输入姓名！" data-required="true">
+						</div>
+						<div id='customer-sex' class="InfoBox">
+							<label for="customer-sex">性别：</label>
+							<input id='customerSexText' class="btn mui-btn mui-btn-block" type='text' disabled="disabled">
+							<input id='customerSex' type="hidden">
+						</div>
+						<div class="InfoBox">
+							<label for="customerPin">身份证号：</label>
+							<input id='customerPin' class="mui-btn mui-btn-block noSelectBg" type='text' value="" data-patten="(^[0-9]{17})([0-9]|[x,X])$" data-patten-desc="请输入正确的18位身份证号！">
+						</div>
+						<div class="InfoBox">
+							<label for="customerContactDetail"><span>*</span>联系方式：</label>
+							<input id='customerContactDetail' class="mui-btn mui-btn-block noSelectBg" type='text' value="" data-description="请输入联系方式！" data-required="true" data-patten="^[0-9]{10,11}$" data-patten-desc="联系方式请输入10或11位数字！">
+						</div>
+						<div id='purchase-birthDay' class="InfoBox">
+							<label for="birthDayText">出生日期：</label>
+							<input id="birthDayText" class="mui-btn mui-btn-block" type='text' disabled="disabled">
+							<input id="birthDay" type='hidden'>
+						</div>
+						<div class="InfoBox">
+							<label for="email">邮箱：</label>
+							<input id='email' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<input id='customerProvinceId' type='hidden' value="">
+							<input id='customerCityId' type='hidden' value="">
+							<input id='customerAreaId' type='hidden' value="">
+							<input id='customerFieldLatitude' type='hidden' value="">
+							<input id='customerFieldLongitude' type='hidden' value="">
+							<label for="customerEntpAddress"><span>*</span>地址：</label>
+							<input id='customerEntpAddress' class="mui-btn mui-btn-block noSelectBg" type='text' value="" data-description="请输入地址！" data-required="true">
+						</div>
+						<input id='fileInfoId' type="hidden">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/form-utils.js"></script>
+		<script src="../js/l-page-4-personal-edit.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/luyi.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		
+		<header class="mui-bar mui-bar-nav common-bar">
+		    <a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+		    <h1 class="mui-title global_title">产品管理</h1>
+		    <a href="" class="myinfo pull-right pro-add">
+		    	新增产品
+		    </a>
+		</header>
+
+		<div id="offCanvasWrapper" class="mui-draggable">
+			<aside id="offCanvasSide" class="mui-off-canvas-right">
+				<!--<div id="offCanvasSideScroll" class="mui-scroll-wrapper slideMain" style="color: white; top: 0.9rem;">-->
+					<!--<div class="mui-scroll" style="padding-bottom: 1rem;">-->
+						<h4 class="slide-page-h">品类筛选</h4>
+						<button id="check-all" class="check-all">全选</button>
+						<ul id="check-list">
+							<form class="mui-input-group">
+
+							</form>
+						</ul>
+					<!--</div>-->
+					<div class="slide-bottom-btn">
+						<button class="slide-btn-reset">重置</button>
+						<button class="slide-btn-screen">筛选</button>
+					</div>
+				<!--</div>-->
+			</aside>
+			<div id="offCanvasContentScroll" class="mui-inner-wrap mui-scroll-wrapper scrollWrapper" style="background-color: #f5f5f5;">
+				<div class="mui-content mui-scroll">
+	                <div class="whole-search-box">
+						<input type="text" value="" style="width: 80% !important;" class="search-ipt" placeholder="请输入产品SKU/产品名称">
+						<button type="button" class="screen-btn screen-btn1">搜索</button>
+						<span id="offCanvasSideScreen" class="screen-btn">筛选</span>
+					</div>
+
+					<div class="management-list">
+					    <ul>
+					    </ul>
+					</div>
+
+					<div class="tips">
+						<p>没有更多数据</p>
+					</div>
+
+				</div>
+				<!-- off-canvas backdrop -->
+				<div id="clickback" class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/form-utils.js"></script>
+		<script src="../js/l-page-2.js"></script>
+	</body>
+
+</html>

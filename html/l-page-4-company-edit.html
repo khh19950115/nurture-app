@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/tools.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/luyi.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav common-bar">
+			<a class="mui-action-back mui-icon mui-icon-back mui-pull-left global_a"></a>
+			<h1 class="mui-title global_title">编辑客户（企业）</h1>
+			<a id="topRight" class="myinfo pull-right">保存</a>
+		</header>
+		<div class="mui-content oBottom">
+			<div class="mainContain">
+				<div class="IncomingSupplier IncomingItem">
+					<h2 class="edit-h2">基本信息</h2>
+					<input id="id" type="hidden">
+					<div class="IncomingInfo">
+						<div class="InfoBox">
+							<label for="entpName"><span>*</span>企业名称：</label>
+							<input id='entpName' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for="bizRegNumber">工商注册号/社会统一信用代码：</label>
+							<input id='bizRegNumber' class="mui-btn mui-btn-block noSelectBg" type='text' >
+						</div>
+						<div class="InfoBox">
+							<label for="legalRepresentative">法人代表：</label>
+							<input id='legalRepresentative' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for="contactPerson"><span>*</span>联系人：</label>
+							<input id='contactPerson' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+						<div class="InfoBox">
+							<label for="contactDetail"><span>*</span>联系方式：</label>
+							<input id='contactDetail' class="mui-btn mui-btn-block noSelectBg" type='text' value="" data-description="请输入联系方式！"  data-patten="^[0-9]*$" data-patten-desc="联系方式只能输入数字！">
+						</div>
+						<div id='entp-type' class="InfoBox">
+							<label for="entp-type"><span>*</span>经营类型：</label>
+							<input id='entpTypeText' class="btn mui-btn mui-btn-block" type='text' disabled="disabled">
+							<input id='entpType' type="hidden">
+						</div>
+						<div id='entp-nature' class="InfoBox">
+							<label for="entp-nature">经营者性质：</label>
+							<input id='entpNatureText' class="btn mui-btn mui-btn-block" type='text' disabled="disabled">
+							<input id='entpNature' type="hidden">
+						</div>
+						<div class="InfoBox">
+							<label for="entpAddress"><span>*</span>公司地址：</label>
+							<input id='provinceId' type='hidden' value="">
+							<input id='cityId' type='hidden' value="">
+							<input id='areaId' type='hidden' value="">
+							<input id='fieldLatitude' type='hidden' value="">
+							<input id='fieldLongitude' type='hidden' value="">
+							<input id='entpAddress' class="mui-btn mui-btn-block noSelectBg" type='text' value="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/form-utils.js"></script>
+		<script src="../js/l-page-4-company-edit.js"></script>
+
+    </body>
+
+</html>
